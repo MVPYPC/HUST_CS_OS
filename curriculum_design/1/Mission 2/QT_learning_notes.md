@@ -6,6 +6,50 @@
 
 在VMware15.5中模拟Ubuntu20.04环境，Linux环境下下载、安装QT，过程较繁琐，不一一赘述了。
 
+## Tips：
+
+QT下载：https://download.qt.io/archive/qt/5.14/5.14.2/可以直接下载,也可点击Detail选择镜像下载,会快很多.
+
+下载完毕后应该是无法直接点开的,需要在命令行中输入下列代码获取权限.
+
+```java
+chmod +x qt-opensource-linux-x64-5.14.2.run
+```
+
+[QT Creator安装教程](http://c.biancheng.net/view/3886.html)
+
+[修改中文界面](https://blog.csdn.net/lyc_daniel/article/details/11813657)
+
+如果遇到了写好项目出现
+
+```java
+cannot find -IGL
+collect2:error.ld returned 1 exit status
+```
+
+执行
+
+```java
+sudo apt-get install libgl1-mesa-dev
+```
+
+遇到
+
+```java
+E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+```
+
+执行
+
+```java
+sudo rm /var/lib/dpkg/lock-frontend
+sudo rm /var/lib/dpkg/lock
+sudo rm /var/cache/apt/archives/lock
+```
+
+再执行`apt-get`就可以了.
+
 ## QT编程涉及到的一些术语、名词
 
 1. Project
