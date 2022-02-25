@@ -6,6 +6,8 @@
 
 在VMware15.5中模拟Ubuntu20.04环境，Linux环境下下载、安装QT，过程较繁琐，不一一赘述了。
 
+[QT Creator安装教程](http://c.biancheng.net/view/3886.html)
+
 ## Tips：
 
 QT下载：https://download.qt.io/archive/qt/5.14/5.14.2/可以直接下载,也可点击Detail选择镜像下载,会快很多.
@@ -15,8 +17,6 @@ QT下载：https://download.qt.io/archive/qt/5.14/5.14.2/可以直接下载,也�
 ```java
 chmod +x qt-opensource-linux-x64-5.14.2.run
 ```
-
-[QT Creator安装教程](http://c.biancheng.net/view/3886.html)
 
 [修改中文界面](https://blog.csdn.net/lyc_daniel/article/details/11813657)
 
