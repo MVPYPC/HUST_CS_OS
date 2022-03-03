@@ -8,8 +8,7 @@
 #include <asm/unistd.h>
 #include <asm/uaccess.h>
 
-asmlinkage long sys_mySyscall(const char* file1, const char* file2)
-{
+asmlinkage long sys_mySyscall(const char* file1, const char* file2){
     char buf[128];
     mm_segment_t old_fs = get_fs();//保护现场
     set_fs(KERNEL_DS);
